@@ -26,7 +26,7 @@ El proyecto está estructurado bajo el patrón MVC:
 ---
 
 ## 📂 Estructura del Proyecto
-
+```
 app/
 ├── Controller/
 ├── Model/
@@ -36,7 +36,7 @@ Public/
 ├── CSS/
 ├── JS/
 └── index.php
-
+```
 
 ---
 
