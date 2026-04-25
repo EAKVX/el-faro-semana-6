@@ -54,15 +54,16 @@ Public/
 
 Para ejecutar el proyecto en entorno local:
 
-1. Instalar XAMPP
+1. Instalar XAMPP :
+   https://www.apachefriends.org/es/download.html
+   
 2. Copiar el proyecto en:
+   C:\xampp\htdocs\
 
-3. C:\xampp\htdocs\
-
-4. 3. Iniciar Apache desde XAMPP
-5. Acceder en el navegador:
-
-http://localhost/El_Faro_Web_Semana-6/public/
+3. Iniciar Apache desde XAMPP
+   
+4. Acceder en el navegador:
+   http://localhost/El_Faro_Web_Semana-6/public/
 
 ---
 
