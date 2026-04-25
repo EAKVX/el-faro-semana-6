@@ -1,0 +1,163 @@
+/* RESET*/
+/* Se aplica a los elementos (*) para quitar estilos por defecto del navegador*/
+*{
+    box-sizing: border-box; /*Con padding y border dentro del tamaño total*/
+    margin: 0; /*Elimina los márgenes que estaban por defecto*/
+    padding: 0; /*Elimina padding por defecto*/
+    font-family:'Poppins', sans-serif; /*Se aplica tipografía global solicitada en el 1er requisito*/
+}
+
+/*SE DEFINE EL COLOR DEL FONDO GENERAL DEL SITIO WEB*/
+body{
+    background-color: #f5f5f5; /*Cumple el fondo gris solicitado en el 2do requisito*/ 
+}
+
+/*HEADER CENTRA EL CONTENIDO AGREGANDO ESPACIO, DEFINIENDO COLORES DEL ENCABEZADO*/
+header{
+    text-align: center; /*Centra el texto*/
+    background-color: #f5f5f5; /* Fondo solicitado*/
+    color: black; /*Texto en color negro*/
+    padding: 20px; /*Espaciado interno*/
+}
+
+/*AJUSTE DE IMÁGEN REDONDEANDO LOS BORDES*/
+header img{
+    margin-top: 10px;
+    border-radius: 10px; /*Otorga el borde redondeado*/
+    max-width: 100%; /*Otorga la imagen responsiva*/
+}
+
+/*SE CAMBIA EL COLOR DEL MENÚ*/
+nav{
+    background-color: #29252c; /*Menú en color oscuro*/
+}
+
+/*FLEX COLOCA LOS ELEMENTOS EN FILA CENTRANDO EL MENÚ*/
+nav ul{
+    display: flex; /* Pone los elementos en fila */
+    justify-content: center; /*Centra de forma horizontal*/
+    list-style: none; /*Quita viñetas*/
+}
+
+/*REGULA EL ESPACIADO ENTRE OPCIONES*/
+nav li{
+    margin: 10px 20px;
+}
+
+/*LINKS DEL MENÚ*/
+/*Cumple 6to requisito, letra b*/
+nav a{
+    color: white;
+    text-decoration: underline; /*Mantiene el subrayado si el mouse no esta encima*/
+}
+
+/*HOVER DE LINKS DEL MENÚ*/
+/*Cumple 6to requisito, letra a*/
+nav a:hover{
+    font-weight: bold; /*Cumple el requisito de negrita al poner el cursor en el vinculo*/
+    text-decoration: none; /*Quita el subrayado*/
+}
+
+/*SECCIONES*/
+section{
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto; /*Centra el contenido*/
+}
+
+/*TÍTULOS*/
+h2{
+    margin-bottom: 15px;
+    border-bottom: 3px solid violet; /*Decoración*/
+}
+
+/*GRILLA DE ARTÍCULOS*/
+.contenedor{
+    display: grid; /*Uso de grid para articulos en grilla como bloque, 3er requisito*/
+    grid-template-columns: repeat(3, 1fr); /*Igualdad en 3 columnas*/
+    gap: 20px; /*Otorga espacio entre los bloques*/
+}
+
+/*ARTÍCULOS*/
+.articulo{
+    background-color: white; /*Cumple requisito de fondo blanco en el articulo, 2do requisito*/
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+/*HOVER BLOQUES, cuando el mouse se ubica encima de un bloque*/
+.articulo:hover{
+    background-color: black; /*Cumple requisito de fondo negro, requisito 4to, letra a*/
+    color: white; /*Cumple con letra de color blanco, requisito 4to, letra b*/
+}
+
+/*IMÁGENES*/
+.articulo img{
+    width: 100%; /*Cumple con responsiva en artículos, haciendo que se adapten al tamaño del contenedor*/
+    border-radius: 8px;
+}
+
+/*LINKS*/
+a{
+    color: blue;
+    text-decoration: underline; /*Como se presentan normalmente*/
+}
+
+/*SE APLICA ESTILO DE FUENTE EN NEGRITA, al poner el cursor sobre el vínculo, cumpliendo el 6to requisito*/
+a:hover{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*MULTIMEDIA*/
+video, audio{
+    display: block;
+    margin: 20px auto; /*Centrado del video y audio*/
+}
+
+/*FOOTER*/
+footer{
+    background-color: #c9d2d0; /*Cumple con el requisito 5to, letra a*/
+    color: #f9f9f9; /*Cumple con el requisito 5to, letra b*/
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/*RESPONSIVIDAD, para pantallas pequeñas (celular) */
+@media screen and (max-width: 768px){
+    .contenedor{
+        grid-template-columns: 1fr; /*Cumple con el requisito de 1 sola columna*/
+    }
+}
+
+/* FORMULARIO CONTACTO */
+/* Ajustado para no romper estilos de Bulma */
+form{
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+/* Solo aplica a formularios sin Bulma */
+form input:not(.input),
+form textarea:not(.textarea){
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botones solo si no son Bulma */
+form button:not(.button){
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:not(.button):hover{
+    background-color: #555;
+}
