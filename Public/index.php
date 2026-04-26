@@ -22,6 +22,17 @@ switch ($action) {
 
     // Contacto
     case 'contacto':
+
+        // Procesamiento del formulario de contacto
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $nombre = $_POST['nombre'] ?? '';
+            $email = $_POST['email'] ?? '';
+            $mensaje = $_POST['mensaje'] ?? '';
+
+            // Simulación de procesamiento
+            echo "<p style='color: green; text-align:center;'>Mensaje recibido de $nombre</p>";
+        }
+
         require_once '../app/View/contacto.php';
         break;
         
