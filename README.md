@@ -63,7 +63,7 @@ Para ejecutar el proyecto en entorno local:
 3. Iniciar Apache desde XAMPP
    
 4. Acceder en el navegador:
-   http://localhost/El_Faro_Web_Semana-6/public/
+   http://localhost/el-faro-semana-6/public/
 
 ---
 
